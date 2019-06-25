@@ -14,8 +14,14 @@ public class StaffController {
     public R test(){
         return R.ok();
     }
+    //返回用户登录页面
+    @RequestMapping("/slogin.html")
+    public String slogin(){
+        return "../weekly/slogin.html";
+    }
+    //返回周报添加页面
     @RequestMapping("/staff.html")
     public String page(){
-        return "../modules/sys/staff.html";
+        return "../weekly/staff.html";
     }
 }
